@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sales Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.glitch.com/b64f6402-81ee-480e-b306-279457e3ae56%2Ficonsale.png?v=1628293181897">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:wght@300;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <p id="calculator">Sales Calculator</p>
+        <object class="center" id="my-svg" type="image/svg+xml" data="https://cdn.glitch.com/b64f6402-81ee-480e-b306-279457e3ae56%2F222.svg?v=1628293181867" width="350px" height="200px"></object>
+    </div>
+    <br>
+
+    <div id="container">
+        <p class="par">INITIAL PRICE</p>
+        <input type="number" id="price" min="0.001">
+        <p class="par">DELIVERY %</p>
+        <input type="number" id="salesDelivery" min="0.001">
+        <button id="btn">Calculate</button>
+
+        <p class="par">PRICE AFTER DISCOUNT</p>
+        <div class="show">
+            <span class="par" id="newPrice" ></span>
+            <span class="par">€</span>
+        </div>
+
+        <p class="par">DISCOUNT AMOUNT</p>
+        <div class="show">
+            <span class="par" id="salesAmount"></span>
+            <span class="par">€</span>
+    </div>
+    </div>
+    <div class="link">
+        <a class="home" href="#" target="_blank"> <img src="https://cdn.glitch.com/b64f6402-81ee-480e-b306-279457e3ae56%2Fhome.png?v=1628293182034"
+                alt="aysel abbasaliyeva website" width="35px"></a>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
